@@ -3,6 +3,8 @@ import MainView from './views/MainView/MainView';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './App.css'
 import ProductsView from './views/ProductsView/ProductsView';
+import BasketContextProvider from './providers/BasketContextProvider';
+import BasketView from './views/BasketView/BasketView';
 
 const router = createBrowserRouter([
   {
@@ -11,13 +13,17 @@ const router = createBrowserRouter([
     children: [
       { path: '/', element: <MainView /> },
       { path: '/products', element: <ProductsView /> },
+      { path: '/basket', element: <BasketView /> },
     ]
   }
 ])
 
 function App() {
   return (
-    <RouterProvider router={router}></RouterProvider>
+    <BasketContextProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </BasketContextProvider>
+
   );
 }
 

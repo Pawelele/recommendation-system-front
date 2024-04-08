@@ -6,7 +6,7 @@
   height: 80px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: rgb(56, 197, 174);
+  background-color: #342E37;
 }
 
 ul {
@@ -20,7 +20,7 @@ ul {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 700;
-  background-color: #d5d5d5;
+  background-color: #FAFFFD;
   width: 145px;
   height: 46px;
   border: none;
@@ -29,5 +29,5 @@ ul {
 }
 
 .title {
-  color: rgb(239, 239, 239);
+  color: #FAFFFD;
 }

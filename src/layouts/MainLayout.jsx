@@ -12,9 +12,7 @@ const MainLayout = () => {
       <div className={classes.content}>
         <Outlet />
       </div>
-      <div className={classes.footer}>
-        {/* <FooterComponent /> */}
-      </div>
+   
     </div>
   )
 }

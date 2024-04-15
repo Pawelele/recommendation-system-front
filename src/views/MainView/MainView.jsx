@@ -3,11 +3,10 @@ import classes from "./MainView.module.css";
 const MainView = () => {
   return (
     <div className={classes.wrapper}>
-      <h1 className={classes.title}>Shop with many products</h1>
-      <p>Buy here to get the best recomendations</p>
-      {/* <IssueForm /> */}
+      <img src={'static/logo.png'} className={classes.titleImage} alt={"logo"} />
+      <h1 className={classes.logoText}>Super Shop where AI helps you make decision</h1>
     </div>
-  )
-}
+  );
+};
 
 export default MainView;

@@ -5,6 +5,7 @@ import './App.css'
 import ProductsView from './views/ProductsView/ProductsView';
 import BasketContextProvider from './providers/BasketContextProvider';
 import BasketView from './views/BasketView/BasketView';
+import UploadView from './views/UploadView/UploadView';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
       { path: '/', element: <MainView /> },
       { path: '/products', element: <ProductsView /> },
       { path: '/basket', element: <BasketView /> },
+      { path: '/upload', element: <UploadView /> },
     ]
   }
 ])

@@ -1,0 +1,10 @@
+.wrapper {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+}
+.buttonUpload {
+  font-size: large;
+  border-radius: 28px;
+  padding: 10px 20px;
+}

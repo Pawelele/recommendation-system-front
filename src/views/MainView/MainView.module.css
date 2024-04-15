@@ -4,12 +4,14 @@
   justify-content: flex-start;
   align-items: center;
   color: black;
+  width: 100vw;
 }
 
-.title {
+.titleImage {
   margin-top: 100px;
 }
 
-p {
-  font-size: 16px;
+.logoText {
+  padding-top: 30px;
+  color: #4c5350;
 }

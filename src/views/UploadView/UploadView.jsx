@@ -23,12 +23,33 @@ const UploadView = () => {
       })
       .catch((error) => {
         setError(error.message);
+      })
+      .finally(() => {
+        runCleanAndTrain();
       });
   };
   const openBrowseDialog = () => {
     if (!inputFileRef.current) return;
 
     inputFileRef.current.click();
+  };
+
+  const runCleanAndTrain = () => {
+    console.log("runClearAndTrain");
+
+    fetch(`http://localhost:8080/clean-and-train`, { method: "POST" })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Something went wrong!");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setError(null);
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
   };
 
   return (
